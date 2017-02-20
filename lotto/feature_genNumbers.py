@@ -3,10 +3,10 @@ import math
 import numpy as np
 import ast
 
-str = open('input.data', 'r').read()
+str = open('feature_input.data', 'r').read()
 data = np.array(ast.literal_eval(str))
-x_data = data[:, 0:1]
-y_data = data[:, 1:]
+x_data = data[:, 0:12]
+y_data = data[:, 12:]
 
 def xavier_init(n_inputs, n_outputs, uniform=True):
   if uniform:
@@ -25,10 +25,10 @@ training_epochs = 2001
 display_step = 200
 
 # tf Graph Input
-X = tf.placeholder(tf.float32, [None, 1]) # mnist data image of shape 28*28=784
+X = tf.placeholder(tf.float32, [None, 12]) # mnist data image of shape 28*28=784
 Y = tf.placeholder(tf.float32, [None, 45]) # 0-9 digits recognition => 10 classes
 
-W1 = tf.get_variable("W1", shape=[1, 45], initializer=xavier_init(1, 45))
+W1 = tf.get_variable("W1", shape=[12, 45], initializer=xavier_init(12, 45))
 W2 = tf.get_variable("W2", shape=[45, 45], initializer=xavier_init(45, 45))
 W3 = tf.get_variable("W3", shape=[45, 45], initializer=xavier_init(45, 45))
 W4 = tf.get_variable("W4", shape=[45, 45], initializer=xavier_init(45, 45))
@@ -80,7 +80,12 @@ with tf.Session() as sess:
     print("Optimization Finished!")
     print()
 
-    test = [[741], [431], [279], [112], [1]]
+    test = [[0, 7, 4, 1, 2, 0, 1, 7, 0, 2, 1, 1],
+            [0, 7, 1, 0, 2, 0, 1, 6, 0, 7, 0, 9],
+            [0, 6, 6, 9, 2, 0, 1, 5, 0, 9, 2, 6],
+            [0, 5, 9, 4, 2, 0, 1, 4, 0, 4, 1, 9],
+            [0, 5, 1, 7, 2, 0, 1, 2, 1, 0, 2, 7],
+            [0, 0, 0, 1, 2, 0, 0, 2, 1, 2, 0, 7]]
 
     for i in range(len(test)):
         pred = sess.run(hypothesis, feed_dict={X: [test[i]]})[0]
