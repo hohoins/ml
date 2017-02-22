@@ -60,6 +60,14 @@ Epoch: 1801 cost= 3.806516171
 Epoch: 2001 cost= 3.806516171
 Optimization Finished!
 
+
+저 3.806516171 값은
+페이스북 TensorFlowKR분들이 알려 줬는데
+https://www.facebook.com/groups/TensorFlowKR/permalink/427913470883050/
+-ln(1/45) 라고 함 근데 왜 저렇게 됬는지는 모름 ㅠㅠ
+https://www.google.co.kr/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=-ln(1/45)
+
+
 나만 그런게 아님
 http://qiita.com/yai/items/a128727ffdd334a4bc57
 나 중에 찾게된 자료인데 이 친구도 3.7에서 cost가 안떨어짐
