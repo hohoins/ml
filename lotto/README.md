@@ -1,6 +1,9 @@
 
 deep learning으로 로또 1등을 예측해보자
 ================================================
+소스코드를 다운로드 하고
+genNumbers.py를 실행 하시면 됩니다.
+
 softmax classification deep learning 로또 1등을 예측해보자
 
 <pre>
