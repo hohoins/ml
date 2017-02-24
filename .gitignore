@@ -1,3 +1,5 @@
 .idea/
 hunkim/MNIST_data/
 hunkim/logs/xor_logs/
+cifar10/__pycache__/cifar10_input.cpython-35.pyc
+cifar10/__pycache__/
