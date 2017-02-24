@@ -29,7 +29,7 @@ features = 4
 labels = 3
 wide = 26
 deep = 3
-learning_rate = 0.01
+learning_rate = 0.03
 training_epochs = 50001
 display_step = 2000
 
