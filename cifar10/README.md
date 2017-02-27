@@ -42,14 +42,16 @@ CNN으로 코드가 이미 다 되어 있음
 <img src="https://github.com/hohoins/ml/blob/master/cifar10/eval_time.png?raw=true"/>
 
 
-코스트
-<https://github.com/hohoins/ml/blob/master/cifar10/train.png?raw=true/>
+2시간 ~ 3시간 정도 학습하면 코스트는 얼추 제법 떨어짐
+<img src="https://github.com/hohoins/ml/blob/master/cifar10/train.png?raw=true"/>
 
 
 코스트
-<https://github.com/hohoins/ml/blob/master/cifar10/train_time.png?raw=true/>
+<img src="https://github.com/hohoins/ml/blob/master/cifar10/train_time.png?raw=true"/>
 
+
+결론은 이걸 좀 수정해서 정확도를 90으로 올린다던지 그런게 되는지는 모르겠는데
+문제는 한번 돌리는데 26시간 걸린다는게 매우 문제임
+AWS 사서 돌리는 수 밖에 없지 싶음
 
 </pre>
-
-
